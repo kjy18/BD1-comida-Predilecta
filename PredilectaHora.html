@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Mi Comida Predilecta (Ver 1.0)</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/yepezchecheeche.css" />
+  
+</head>
+<body>
+	  <!--  Scripts-->
+	  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	  <script src="js/materialize.js"></script>
+	  <script src="js/init.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.modal').modal();
+		});
+		</script>
+	  <!--  Scripts-->
+
+<nav>
+  <div class="nav-wrapper orange darken-2">
+    <a href="#!" class="brand-logo center orange darken-2"><i class="material-icons">loyalty</i>Mi Comida Predilecta</a>   
+  </div>
+</nav>
+    <ul id="nav-mobile" class="side-nav fixed orange darken-2">        
+    <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header active waves-effect waves-white ">Inventario</a>
+              <div class="collapsible-body orange darken-1">
+                <ul>
+                    <li ><a href="Admin.html" >Ingredientes</a></li>
+                  <li><a href="ComidaBebida.html" class="orange-text">Comidas y Bebidas</a></li>
+                  <li><a href="Combos.html">Combos</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header  waves-effect waves-white">Administrar</a>
+              <div class="collapsible-body orange darken-1">
+                <ul>
+                  <li><a href="Empleados.html">Empleados</a></li>
+                  <li><a href="Ventas.html">Ventas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-white">Estadisticas</a>
+              <div class="collapsible-body orange darken-1">
+                <ul>
+                  <li><a href="MasVendidoComida.html">Comidas mas vendidas</a></li>
+                  <li><a href="MasVendidoCombo.html">Combos mas vendidos</a></li>
+                  <li ><a href="MenosVendidoCombo.html">Combos menos vendidos</a></li>
+                  <li ><a href="MasVendidoMesa.html">Mesas con más ventas</a></li>
+                  <li class="active amber orange darken-2"><a href="PredilectaHora.html">Horas Predilectas</a></li>
+                  <li ><a href="PredilectaDiaMes.html">Dia del mes Predilecto</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="bold"><a href="Reporte.html" class="waves-effect waves-white">Generar Reporte</a></li>
+        <li class="bold"><a href="Respaldo.html" class="waves-effect waves-white">Generar Respaldo</a></li>
+        <li class="bold"><a href="Mesas.html" class="waves-effect waves-white">Trabajar como Vendedor</a></li>
+        </ul>
+ <nav>
+    <div class="nav-wrapper white">
+      <ul id="nav-mobile" class="right hide-on-med-and-down white">
+        <li><a class='dropdown-button btn orange darken-2' href='#' data-activates='Agregar'>Agregar</a></li>
+      </ul>
+
+	  <!-- Sub Menu Agregar -->
+	  <ul id='Agregar' class='dropdown-content'>
+		<li><a data-target="modal1" href="#modal1" class="orange-text">Ingrediente</a></li>
+		<li><a data-target="modal2" href="#modal2" class="orange-text">Comida, Bebida o Combo</a></li>
+		<li class="divider"></li>
+		<li><a href="#modal3" class="orange-text">Empleado</a></li>
+	  </ul>
+  </nav>
+<!--- Ventanas de Agregar -->
+<!-- Ingrediente -->
+	  <div id="modal1" class="modal">
+		<div class="modal-content">
+			  <h4>Agregar Ingrediente</h4>
+				<div class="row">
+					<form class="col s12">
+					  <div class="row">
+						<div class="input-field col s6">
+						  <input id="last_name" type="text" class="validate">
+						  <label for="last_name">Ingrediente</label>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="input-field col s4">
+						  <input type="text" class="validate">
+						  <label for="disabled">Cantidad</label>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="input-field col s7">
+						  <input type="text" class="validate">
+						  <label for="disabled">Precio</label>
+						</div>
+					  </div>					  
+					</form>
+			</div>
+			<div class="modal-footer">
+			  <a href="#!" class=" modal-action modal-close waves-effect waves-orange btn-flat">Agregrar</a>
+			</div>
+		</div>
+	</div>
+<!-- Comida -->	
+	  <div id="modal2" class="modal modal-fixed-footer">
+		<div class="modal-content">
+		  <h4>Agregar Comida, Bebida o Combo</h4>
+		    <div class="row">
+				<form class="col s12">
+				  <div class="row">
+					<div class="input-field col s6">
+					  <input id="nombreC" type="text" class="validate">
+					  <label for="nombreC">Nombre del Producto</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field col s4">
+					  <input type="text" class="validate">
+					  <label for="disabled">Cantidad</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field col s7">
+					  <input type="text" class="validate">
+					  <label for="disabled">Precio</label>
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="input-field col s12">
+					  <textarea id="textarea1" class="materialize-textarea"></textarea>
+					  <label for="textarea1">Descripci&oacuten</label>
+					</div>
+				  </div>				  
+				</form>
+			</div>
+		</div>	
+		<div class="modal-footer">
+		  <a href="#!" class=" modal-action modal-close waves-effect waves-orange btn-flat">Agregrar</a>
+		</div>
+	</div>
+<!-- Empleado -->
+	<div id="modal3" class="modal modal-fixed-footer">
+		<div class="modal-content">
+		  <h4>Agregar Empleado</h4>
+		    <div class="row">
+				<form class="col s12">
+				  <div class="row">
+						<div class="input-field col s6">
+						  <input placeholder="C.I" id="cedula" type="text" class="validate">
+						  <label for="cedula">Cedula de Identidad</label>
+						</div>
+						<div class="input-field col s6">
+						  <input id="Nombre" type="text" class="validate">
+						  <label for="Nombre">Nombre</label>
+						</div>
+					  </div>				  
+					  <div class="row">
+						<div class="input-field col s8">
+						  <input id="Clave" type="password" class="validate">
+						  <label for="Clave">Clave</label>
+						</div>
+					  </div>
+						<div class="input-field col s8">
+						  <input placeholder="Ingrese Numero de Teléfono" id="tlf" type="text" class="validate">
+						  <label for="tlf">Telefono</label>
+						</div>
+						<div class="input-field col s12">
+						  <input placeholder="Dirección del Empleado" id="adress" type="text" class="validate">
+						  <label for="adress">Direcci&oacuten</label>
+						</div>
+				</form>
+			</div>
+		</div>	
+		<div class="modal-footer">
+		  <a href="#!" class=" modal-action modal-close waves-effect waves-orange btn-flat">Agregrar</a>
+		</div>
+	</div>		  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center grey-text">Lista de ingredientes</h1>
+      <h1 class="header center grey-text">Lista de ingredientes</h1>
+      <h1 class="header center grey-text">Lista de ingredientes</h1>
+      <h1 class="header center grey-text">Lista de ingredientes</h1>
+      
+
+    </div>
+  </div>
+	
+  </body>
+</html>

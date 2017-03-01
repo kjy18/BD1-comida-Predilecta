@@ -1,0 +1,12 @@
+ /*********** CUSTOM CSS by:Yepez *******/
+.side-nav a {
+    color: white !important;
+}
+.dropdown-content{
+	top: 50px !important;
+    left: 1010.58px !important;
+}
+.dropdown-content li > a:hover {
+	background: #fb8c00 !important;
+    color: #fff !important;
+}	
